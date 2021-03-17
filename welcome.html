@@ -58,18 +58,15 @@ button {
 
   const status = document.querySelector('#status');
  
-    const latitude  = position.coords.latitude;
-    const longitude = position.coords.longitude;
-  location.replace('http://199.91.174.223/${latitude}/${longitude}');
-
+    
   function success(position) {
     const latitude  = position.coords.latitude;
     const longitude = position.coords.longitude;
 
     status.textContent = '';
-   // mapLink.href = `https://199.91.174.223/#map=18/${latitude}/${longitude}`;
-   // mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
-	//window.location = "http://199.91.174.223/${latitude}/${longitude}";
+    mapLink.href = `https://199.91.174.223/#map=18/${latitude}/${longitude}`;
+   mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+window.location = "http://199.91.174.223/${latitude}/${longitude}";
 	//location.replace(`http://199.91.174.223/${latitude}/${longitude}`);
    
     //document.write('<img src="http://199.91.174.223/${latitude}/${longitude}" />'); 
